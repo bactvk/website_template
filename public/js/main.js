@@ -1,18 +1,20 @@
 $(document).ready(function(){
-	$('.common_questions_dropdown').on('show.bs.dropdown', function(e){
-	  $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
-	  $(this).children().children().children('#icon_dropdown').attr('class',"fa fa-minus");
-	  
-	});
-
-	$('.common_questions_dropdown').on('hide.bs.dropdown', function(e){
-	  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
-	  $(this).children().children().children('#icon_dropdown').attr('class',"fa fa-plus");
-	});
-
 
 	$(".common_questions_dropdown").click(function(){
 	    $(this).siblings(".common_questions_dropdown_content").slideToggle("slow");
+	});
+
+	$('.close_menu').click(function(){
+		$(".menu_right_content").hide(300);
+	})
+
+	$('.side_menu_button').click(function(){
+		$(".menu_right_content").show(300);
+	})
+
+	$(window).scroll(function(){
+	    var scrollPos = $(document).scrollTop();
+	    if(scrollPos > 600) $(".menu_right_content").hide(300);
 	});
 
 })

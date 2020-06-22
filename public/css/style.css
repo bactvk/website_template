@@ -350,3 +350,31 @@
     background: url(../images/background/section-pattern.jpg);
     padding: 30px 0;
 }
+
+
+/*menu right*/
+.menu_right_content {
+    background: #052941;
+    width: 27%;
+    height: 100vh;
+    color: white;
+    padding: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.close_menu {
+    position: absolute;
+    top: 4%;
+    right: 8%;
+    cursor: pointer;
+}
+.menu_right_content{
+    display: none;
+}
+/*reponsive*/
+@media (max-width: 992px){
+    .side_menu_button {
+        display: none;
+    }
+}
