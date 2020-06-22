@@ -9,4 +9,10 @@ $(document).ready(function(){
 	  $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
 	  $(this).children().children().children('#icon_dropdown').attr('class',"fa fa-plus");
 	});
+
+
+	$(".common_questions_dropdown").click(function(){
+	    $(this).siblings(".common_questions_dropdown_content").slideToggle("slow");
+	});
+
 })

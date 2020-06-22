@@ -249,11 +249,18 @@
     text-decoration: none;
 }
 
-ul.dropdown-menu {
-    width: 86%;
+.common_questions_dropdown_content{
+    width: 87%;
     border: none;
     font-family: 'Work Sans';
     font-weight: 700;
+}
+
+.common_questions_dropdown{
+    cursor: pointer;
+}
+.title_dropdown{
+    float: left;
 }
 
 /*find us*/
