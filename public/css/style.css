@@ -180,3 +180,145 @@
     text-transform: uppercase;
     color: white;
 }
+
+
+/*common_question*/
+.container_custom {
+    width: 85%;
+    margin: 150px auto 100px auto;
+}
+
+.common_questions_image{
+    background: url(../images/background/section-title-image-2.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: top;
+}
+.common_questions_text {
+    color: #052941;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    
+}
+.common_questions_intro {
+    position: relative;
+    height: 270px;
+}
+
+.common_questions_text {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+.common_questions_content {
+    position: absolute;
+    bottom: 23%;
+    left: 30%;
+    color: #4d4d4d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    width: 40%;
+}
+
+/*common_questions toogle*/
+.dropdown-toggle::after{
+    display: none;
+}
+.common_questions_dropdown{
+    list-style: none;
+}
+.common_questions_dropdown h5{
+    width: 90%;
+    color: #052941;
+    border-bottom: 1px solid #aaaa;
+}
+.title_dropdown{
+    padding-right: 30%;
+}
+.common_questions_dropdown a{
+    text-decoration: none;
+}
+
+ul.dropdown-menu {
+    width: 86%;
+    border: none;
+    font-family: 'Work Sans';
+    font-weight: 700;
+}
+
+/*find us*/
+.find_us_map{
+    background : #e34530;
+    padding: 100px 50px 100px 50px;
+}
+.item_find_us{
+    color: white;
+}
+.find_us_content_bk{
+    background: url(../images/background/section-title-image-11.png);
+    position: absolute;
+    top: -22px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: -20px;
+}
+.find_us_content h4{
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 55px;
+    line-height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+
+}
+.find_us_content_title{
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    line-height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+/*client*/
+.client_image{
+    background: url(../images/background/section-title-image-3.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: top;
+}
+
+.client_intro {
+    position: relative;
+    height: 270px;
+}
+.client_text {
+    color: #052941;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    
+}
+
+
