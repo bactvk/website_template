@@ -14,7 +14,15 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 	    var scrollPos = $(document).scrollTop();
-	    if(scrollPos > 600) $(".menu_right_content").hide(300);
+	    if(scrollPos > 600){
+	    	$(".menu_right_content").hide(300);
+	    	$("#back_to_top").show();
+	    }else{
+	    	$("#back_to_top").hide();
+	    } 
 	});
 
+	$("#back_to_top").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	})
 })

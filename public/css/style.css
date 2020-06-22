@@ -1,6 +1,9 @@
 /*menu top*/
-.bg-custom {
+.header{
     background: #e34530;
+}
+.bg-custom {
+/*    background: #e34530;*/
     color: white !important;
     padding: 0px;
     border-bottom: 1px solid #ffffff75;
@@ -18,7 +21,6 @@
 }
 
 .popup_menu.qode-popup-menu-svg-opener .qode-popup-menu-opener svg *, .side_menu_button .qode-side-menu-button-svg svg path, .side_menu_button .qode-side-menu-button-svg svg>* {
-    /*fill: currentColor;*/
     stroke: currentColor;
 }
 .side_menu_button .qode-side-menu-button-svg svg line {
@@ -28,7 +30,12 @@
 .nav_item_right .icon_menu {
     padding-right: 15px;
 }
-
+.nav-link.active{
+    border-bottom: 1px solid white;
+}
+.menu_bar .nav-item:hover .nav-link{
+    border-bottom: 1px solid white;
+}
 /*slider*/
 
 .carousel-item-custom {
@@ -77,19 +84,28 @@
     color: rgb(255, 255, 255); 
    
 }
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 
 
 /*select_box*/
 .section_boxed {
     background: url(../images/background/section-pattern.jpg);
-    padding: 120px 0;
+    padding: 30px 0;
 }
 
 .section_boxed .box {
     text-align: center;
     color: white;
 }
-
+.icon_section-boxed img {
+    width: 80px;
+    height: 76px;
+}
 /*about us*/
 .container_custom {
     width: 85%;
@@ -156,10 +172,11 @@
 
 /*slider bottom*/
 .slide_bottom {
-    height: 500px;
+    height: 600px;
     background: url(../images/background/home-parallax-image-1.jpg);
     text-align: center;
     margin-top: 160px;
+    padding: 100px 0;
 }
 .slide_bottom .carousel-item{
     height: 500px;
@@ -173,7 +190,7 @@
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0px;
-    width: 50%;
+    width: 51%;
     margin : 30px auto;
 }
 .slide_bottom .carousel-item h4{
@@ -372,9 +389,31 @@
 .menu_right_content{
     display: none;
 }
+/*back top*/
+#back_to_top {
+    background: #032339;
+    position: fixed;
+    border: 10%;
+    bottom: 4%;
+    right: 2%;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+
+    display: none;
+}
+#back_to_top:hover{
+    background: #0b314b;
+}
+
+
+
 /*reponsive*/
 @media (max-width: 992px){
     .side_menu_button {
         display: none;
     }
 }
+
+
+/*about-us.html*/
