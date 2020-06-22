@@ -1,0 +1,182 @@
+/*menu top*/
+.bg-custom {
+    background: #e34530;
+    color: white !important;
+    padding: 0px;
+    border-bottom: 1px solid #ffffff75;
+}
+
+.form-inline.my-2.my-lg-0.nav_item_right {
+    list-style: none;
+}
+
+.menu_bar li {
+    padding:0px 20px;
+}
+.menu_bar li a {
+    color: white !important;
+}
+
+.popup_menu.qode-popup-menu-svg-opener .qode-popup-menu-opener svg *, .side_menu_button .qode-side-menu-button-svg svg path, .side_menu_button .qode-side-menu-button-svg svg>* {
+    /*fill: currentColor;*/
+    stroke: currentColor;
+}
+.side_menu_button .qode-side-menu-button-svg svg line {
+    color: #fff;
+}
+
+.nav_item_right .icon_menu {
+    padding-right: 15px;
+}
+
+/*slider*/
+
+.carousel-item-custom {
+    background: #e34530;
+    padding: 160px 0px 160px 80px;
+}
+.carousel-item-custom h1{
+
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 80px;
+    font-weight: 700;
+    font-size: 80px;
+    width: 649px;
+    padding-bottom: 20px;
+}
+.carousel-item-custom .carousel-caption p{
+	font-family: "Work Sans";
+    visibility: visible;
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: normal;
+    width: 445px;
+
+    padding-bottom: 20px;
+}
+.carousel-item-custom .carousel-caption button{
+    background-color: rgb(5, 41, 65);
+    font-family: "Work Sans";
+    float : left;
+    line-height: 50px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    border-color: rgb(77, 77, 77);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px 45px;
+    color: rgb(255, 255, 255); 
+   
+}
+
+
+/*select_box*/
+.section_boxed {
+    background: url(../images/background/section-pattern.jpg);
+    padding: 120px 0;
+}
+
+.section_boxed .box {
+    text-align: center;
+    color: white;
+}
+
+/*about us*/
+.container_custom {
+    width: 85%;
+    margin: 100px auto;
+}
+
+.about_us_image{
+    background: url(../images/background/section-title-image-1.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: top;
+}
+.about_us_text {
+    color: #052941;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    
+}
+.about_us_intro {
+    position: relative;
+    height: 270px;
+}
+
+.about_us_text {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+.about_us_content {
+    position: absolute;
+    bottom: 23%;
+    left: 30%;
+    color: #4d4d4d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    width: 40%;
+}
+/*card*/
+.card_body_1 {
+    background: #e34530;
+    color: white;
+}
+.card_body_2 {
+    background: #052941;
+    color: white;
+}
+.card_body_3 {
+    background: #e34530;
+    color: white;
+}
+.view_more{
+    color: white;
+}
+
+/*slider bottom*/
+.slide_bottom {
+    height: 500px;
+    background: url(../images/background/home-parallax-image-1.jpg);
+    text-align: center;
+    margin-top: 160px;
+}
+.slide_bottom .carousel-item{
+    height: 500px;
+}
+.slide_bottom .carousel-item p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: none;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+    width: 50%;
+    margin : 30px auto;
+}
+.slide_bottom .carousel-item h4{
+    text-transform: uppercase;
+    color: white;
+}
