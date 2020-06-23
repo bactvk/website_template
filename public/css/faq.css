@@ -169,6 +169,58 @@
 }
 
 
+/*Hiệu ứng Jquery Accordion*/
+.hieuung {
+    WIDTH: 100%;
+    MARGIN: auto;
+    padding: 20px;
+}
+
+.motkhoi {
+  cursor: pointer;
+}
+.motkhoi:hover {
+     color: #E34530 !important;
+}
+.motkhoi span{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #052941;
+    line-height: 30px;
+    font-family: roboto condensed,sans-serif;
+    font-size: 23px;
+    letter-spacing: 0;
+    width:100%;
+}
+.motkhoi_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+    border-bottom-color: #c0c9cf;
+    padding-left: 15px;
+    height: 75px;
+
+}
+.motkhoi .motkhoi_title :hover {
+    color: #E34530;
+}
+
+.ndmotkhoi{
+    box-sizing: border-box;
+    color: #4d4d4d;
+    font-family: work sans,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+    padding: 14px 15px 12px;
+}
+.span_color{
+    color: #E34530 !important;
+}
+
+
 
 /*reponsive*/
 @media (max-width: 992px){

@@ -30,6 +30,37 @@ $(document).ready(function(){
 	    } 
 	});
 
+
+	//Hiệu ứng Accodion
+	$('.ndmotkhoi').slideUp();
+	var mode = true;
+	$('.motkhoi_title').click(function(event){
+		$('.motkhoi_title').children('span').removeClass('span_color'); 
+		$('.motkhoi_title').removeClass('span_color');
+		$(this).children('span').addClass('span_color');
+		$(this).addClass('span_color');
+
+
+		$('.motkhoi_title i').removeClass();
+		$('.motkhoi_title i').addClass('fa fa-plus');
+
+		$('.ndmotkhoi').slideUp();
+		$(this).next().slideToggle();
+		
+		if(mode==true){
+			$(this).children('i').removeClass();
+			$(this).children('i').addClass('fa fa-window-minimize');
+			console.log(mode);
+		}
+		if(mode==false){
+			$(this).children('i').removeClass();
+			$(this).children('i').addClass('fa fa-plus');
+			console.log(mode);
+		}
+		mode=!mode;
+		console.log(mode);
+	});
+
 	$("#back_to_top").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	})
