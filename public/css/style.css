@@ -205,11 +205,18 @@
     margin: 150px auto 100px auto;
 }
 
+.common_questions{
+    padding-bottom: 20px;
+}
 .common_questions_image{
     background: url(../images/background/section-title-image-2.png);
     background-repeat: no-repeat;
     height: 100px;
     background-position: top;
+}
+.common_questions_dropdown i{
+    font-size: 15px;
+    float: right;
 }
 .common_questions_text {
     color: #052941;
@@ -221,6 +228,9 @@
     letter-spacing: 0px;
     text-transform: uppercase;
     
+}
+.common_questions_block{
+    align-self: center;
 }
 .common_questions_intro {
     position: relative;
@@ -255,22 +265,22 @@
     list-style: none;
 }
 .common_questions_dropdown h5{
-    width: 90%;
     color: #052941;
     border-bottom: 1px solid #aaaa;
 }
 .title_dropdown{
-    padding-right: 30%;
+ 
+    font-weight: bold;
 }
 .common_questions_dropdown a{
     text-decoration: none;
 }
 
 .common_questions_dropdown_content{
-    width: 87%;
     border: none;
     font-family: 'Work Sans';
     font-weight: 700;
+    padding-right: 10px;
 }
 
 .common_questions_dropdown{

@@ -1,8 +1,16 @@
 $(document).ready(function(){
 
+	// slide up, down
 	$(".common_questions_dropdown").click(function(){
+		$('.common_questions_dropdown_content').slideUp();
 	    $(this).siblings(".common_questions_dropdown_content").slideToggle("slow");
+
+
 	});
+
+	$('.common_questions_dropdown_content').slideUp();
+	$('.common_questions_dropdown_content.active').slideDown();
+	// 
 
 	$('.close_menu').click(function(){
 		$(".menu_right_content").hide(300);
