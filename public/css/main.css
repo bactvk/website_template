@@ -1,0 +1,33 @@
+/*menu*/
+      .close_menu img:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+      }
+      .close_menu img{
+        transform: rotate(-90deg);
+        transition: 1s;
+      }
+      .menu_right_content p{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        text-transform: none;
+        line-height: 28px;
+      }
+      .menu_right_content_text p{
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 0px;
+          text-transform: none;
+          line-height: 28px;
+      }
+      .menu_right_content{
+        width: 30%;
+      }
+      .menu_right_content{
+          display: block;
+          right: -32%;
+          padding: 180px 150px 0px 150px;
+      }

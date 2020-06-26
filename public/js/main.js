@@ -1,5 +1,11 @@
 $(document).ready(function(){
+	$('.side_menu_button').click(function(){
+          $(".menu_right_content").css({"right":"0","transition":"0.5s"});
+        })
 
+        $('.close_menu').click(function(){
+          $(".menu_right_content").css({"right":"-30%","transition":"0.5s"});
+        })
 	// slide up, down
 	$(".common_questions_dropdown").click(function(){
 		$('.common_questions_dropdown_content').slideUp();
