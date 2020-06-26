@@ -15,7 +15,7 @@
 }
 
 .menu_bar li {
-    padding:0px 20px;
+    padding:0px 30px;
 }
 .menu_bar li a {
     color: white !important;
@@ -55,18 +55,17 @@
     padding-bottom: 20px;
 }
 .carousel-item-custom .carousel-caption p{
-	font-family: "Work Sans";
+    font-family: "Work Sans";
     visibility: visible;
     text-align: left;
     line-height: 30px;
     letter-spacing: 0px;
-    font-weight: 500;
+    font-weight: 100;
     font-size: 18px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     white-space: normal;
     width: 445px;
-
     padding-bottom: 20px;
 }
 .carousel-item-custom .carousel-caption button{
@@ -149,7 +148,7 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 100;
     letter-spacing: 0px;
     text-transform: none;
     width: 40%;
@@ -250,9 +249,9 @@
     color: #4d4d4d;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 0px;
     text-transform: none;
     width: 40%;
@@ -475,6 +474,7 @@
     width: 360px;
     height: auto;
     transform: rotate(0deg);
+}
 img.menu_bar_logo {
     z-index: 10;
 }
@@ -486,6 +486,21 @@ img.menu_bar_logo {
     width: 235px;
 }
 
+p.card-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+p.service_text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
 
 /*footer*/
 .section_boxed_footer h5{
@@ -518,6 +533,7 @@ img.menu_bar_logo {
     .side_menu_button {
         display: none;
     }
+
 }
 
 
