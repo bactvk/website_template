@@ -6,7 +6,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="public/library/bootstrap/css/bootstrap.min.css" >
-   
+    
     <title>Hello, Bac!</title>
     <!-- <link rel="stylesheet" type="text/css" href="public/font-awesome/font-awesome.min.css"> -->
 
@@ -14,7 +14,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+    <style type="text/css">
+      /*menu*/
+      .close_menu img:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+      }
+      .close_menu img{
+        transform: rotate(-90deg);
+        transition: 1s;
+      }
+      .menu_right_content p{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0px;
+        text-transform: none;
+        line-height: 28px;
+      }
+      .menu_right_content_text p{
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 0px;
+          text-transform: none;
+          line-height: 28px;
+      }
+      .menu_right_content{
+        width: 30%;
+      }
+      .menu_right_content{
+          display: block;
+          right: -32%;
+          padding: 180px 150px 0px 150px;
+      }
+    </style>
   </head>
   <body>
     
@@ -349,18 +385,15 @@
 
             <div class="item_find_us">
               <h4 class="find_us_content_title">main office</h4>
-              <div class="find_us_content">
-                <p>
-                  193 Steele Street, Burr Ridge, Ohio
-                </p>
-                <p>
-                  <i class="fa fa-th"></i>  &nbsp;267-527-511215, 267-527-511264
-                </p>
-                <p>
-                  <i class="fa fa-clock-o"></i>  &nbsp;Mon - Sat: 7:00 - 22:00
-                </p>
-              </div>
-              
+              <p>
+                <i class="fa fa-map-marker"></i> &nbsp;193 Steele Street, Burr Ridge, Ohio
+              </p>
+              <p>
+                <i class="fa fa-th"></i>  &nbsp;267-527-511215, 267-527-511264
+              </p>
+              <p>
+                <i class="fa fa-clock-o"></i>  &nbsp;Mon - Sat: 7:00 - 22:00
+              </p>
             </div>
              
           </div>
@@ -474,19 +507,19 @@
       <div class="menu_right">
         <div class="menu_right_content">
           <div class="close_menu">
-            <i class="fa fa-times"></i>
+            <img src="public/images/close_side_menu.png">
           </div>
-          <h4>BRIDGE</h4>
+          <img src="public/images/sidearea-logo.png">
           <p class="mt-3 mb-5">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-          <div class="">
+          <div class="menu_right_content_text">
             <p>
-              <i class="fa fa-th"></i>  &nbsp;267-527-511215, 267-527-511264
+              <i class="fa fa-th"></i>  &nbsp;&nbsp;0018 267-527-511215
             </p>
             <p>
-              <i class="fa fa-map-marker"></i> &nbsp;193 Steele Street, Burr Ridge, Ohio
+              <i class="fa fa-map-marker"></i> &nbsp;&nbsp;193 Steele Street, Burr Ridge
             </p>
             <p>
-              <i class="fa fa-clock-o"></i>  &nbsp;Mon - Sat: 7:00 - 22:00
+              <i class="fa fa-clock-o"></i>  &nbsp;&nbsp;Mon - Sat: 7:00 - 22:00
             </p>
           </div>
         </div>
@@ -507,5 +540,17 @@
 
     <script type="text/javascript" src="public/js/main.js"></script>
 
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.side_menu_button').click(function(){
+          $(".menu_right_content").css({"right":"0","transition":"0.5s"});
+        })
+
+        $('.close_menu').click(function(){
+          $(".menu_right_content").css({"right":"-30%","transition":"0.5s"});
+        })
+
+      })
+    </script>
   </body>
 </html>
