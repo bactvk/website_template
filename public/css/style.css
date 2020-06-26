@@ -507,6 +507,12 @@ img.menu_bar_logo {
     font-weight: 300;
 }
 
+.section_boxed_footer {
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
+
 /*reponsive*/
 @media (max-width: 992px){
     .side_menu_button {

@@ -31,3 +31,9 @@
           right: -32%;
           padding: 180px 150px 0px 150px;
       }
+
+.section_boxed_footer {
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+}
