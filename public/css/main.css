@@ -1,38 +1,68 @@
-/*menu*/
-      .close_menu img:hover{
-        transform: rotate(90deg);
-        transition: 1s;
-      }
-      .close_menu img{
-        transform: rotate(-90deg);
-        transition: 1s;
-      }
-      .menu_right_content p{
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 300;
-        letter-spacing: 0px;
-        text-transform: none;
-        line-height: 28px;
-      }
-      .menu_right_content_text p{
-          color: #ffffff;
-          font-size: 14px;
-          font-weight: 300;
-          letter-spacing: 0px;
-          text-transform: none;
-          line-height: 28px;
-      }
-      .menu_right_content{
-        width: 30%;
-      }
-      .menu_right_content{
-          display: block;
-          right: -32%;
-          padding: 180px 150px 0px 150px;
-      }
+
+.wrapper{
+  width: 100%;
+}
+/*menu right*/
+.close_menu img:hover{
+  transform: rotate(90deg);
+  transition: 1s;
+}
+.close_menu img{
+  transform: rotate(-90deg);
+  transition: 1s;
+}
+.menu_right_content {
+    background: #052941;
+    width: 30%;
+    height: 100vh;
+    color: white;
+    padding: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: none;
+}
+.menu_right_content>p{
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 28px;
+
+    font-family: 'Work Sans', sans-serif;
+}
 
 
+.menu_right_content_text p{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: none;
+  line-height: 28px;
+  font-family: 'Work Sans', sans-serif;
+}
+.menu_right_content{
+  display: none;
+  right: -32%;
+  padding: 180px 120px 0px 150px;
+}
+.close_menu {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.nav_item_right{
+  display: contents;
+}
+.carousel-caption {
+  top: 0 !important;
+}
+/**/
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
@@ -54,3 +84,17 @@ a.nav-link {
 }
 
 
+/*about us*/
+.box_card{
+  text-align: -webkit-center;
+}
+.card{
+  text-align: left;
+}
+
+@media (max-width: 650px){
+    #back_to_top {
+        display: none;
+    }
+
+}

@@ -3,13 +3,63 @@
 .header{
     background: #e34530;
 }
+.navbar_menu li a,.nav_item_right li span{
+    font-family: 'Work Sans', sans-serif;
+}
+
 .bg-custom {
 /*    background: #e34530;*/
     color: white !important;
     padding: 0px;
     border-bottom: 1px solid #ffffff75;
 }
+.trucking_title{
+    
+    font-family: "Roboto Condensed";
+    text-transform: uppercase;
+    visibility: visible;
+    text-align: left;
+    line-height: 80px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 80px;
+    border-color: rgb(77, 77, 77);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: normal;
+    width: 649px;
+    height: auto;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
 
+}
+.trucking_image{
+    overflow: hidden;
+    border-color: rgb(77, 77, 77);
+    border-style: none;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    width: 586px;
+    height: 345px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+}
 .form-inline.my-2.my-lg-0.nav_item_right {
     list-style: none;
 }
@@ -379,26 +429,8 @@
 }
 
 
-/*menu right*/
-.menu_right_content {
-    background: #052941;
-    width: 27%;
-    height: 100vh;
-    color: white;
-    padding: 100px;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-.close_menu {
-    position: absolute;
-    top: 4%;
-    right: 8%;
-    cursor: pointer;
-}
-.menu_right_content{
-    display: none;
-}
+
+
 /*back top*/
 #back_to_top {
     background: #032339;
