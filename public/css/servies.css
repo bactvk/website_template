@@ -1,7 +1,15 @@
 /*menu top*/
-.header{
+.menu_bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.services_bk{
     background: url(../images/background/services-title-image.jpg);
-    height: 530px;
+    height: 450px;
     background-repeat: no-repeat;
     position: relative;
     background-size: contain;
@@ -34,7 +42,7 @@
     padding:0px 20px;
 }
 .menu_bar li a {
-    color: white !important;
+    color: white;
 }
 
 .popup_menu.qode-popup-menu-svg-opener .qode-popup-menu-opener svg *, .side_menu_button .qode-side-menu-button-svg svg path, .side_menu_button .qode-side-menu-button-svg svg>* {
@@ -56,16 +64,24 @@
 
 
 /*about us*/
-.container_custom {
+.container_custom{
     width: 85%;
     margin: 100px auto;
 }
+.container_custom_what {
+    width: 85%;
+    margin: 100px auto 10px auto;
+}
+.container_custom_fast{
+    width: 85%;
+    margin: 50px auto 10px auto;
+}
 
 .about_us_image{
-    background: url(../images/background/section-title-image-6.png);
+    /*background: url(../images/background/section-title-image-6.png);
     background-repeat: no-repeat;
     height: 100px;
-    background-position: top;
+    background-position: top;*/
 }
 .about_us_text {
     color: #052941;
@@ -97,10 +113,9 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    font-weight: 600;
     letter-spacing: 0px;
     text-transform: none;
-    width: 40%;
+    width: 48%;
 }
 
 /*fast_delivery*/
@@ -212,5 +227,26 @@
 @media (max-width: 992px){
     .side_menu_button {
         display: none;
+    }
+    .menu_bar{
+        position: relative;
+    }
+    .services_bk{
+        height: 150px;
+    }
+    .about_us_image{
+        width: 90%;
+    }
+    .about_us_text{
+        font-size: 70px;
+        line-height: 64px;
+        width: 90%;
+        left: 10%;
+        top: -10%;
+    }
+    .about_us_content{
+        width: 90%;
+        top: 40%;
+        left: 5%;
     }
 }

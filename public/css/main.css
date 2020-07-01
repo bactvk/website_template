@@ -180,4 +180,7 @@ a.nav-link {
         outline: none;
 
     }
+    .nav-link.active{
+      border-bottom: 1px solid #eaeaea !important;
+    }
 }
