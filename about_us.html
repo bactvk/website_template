@@ -26,16 +26,17 @@
         <!-- menu bar -->
         <div class="menu_bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-custom">
-                <img src="public/images/logo.jpg">
+                <img class="menu_bar_logo" src="public/images/logo.jpg">
+                <img class="menu_bar_mobile_logo" src="public/images/mobile-logo.png">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav mr-auto navbar_menu">
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> 
                     <li class="nav-item">
                       <a class="nav-link active" href="#">About Us</a>
                     </li>
@@ -46,7 +47,7 @@
                       <a class="nav-link" href="faq.html" tabindex="-1" aria-disabled="true">FAQ</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                      <a class="nav-link border_none" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
                     </li>
                   </ul>
                   <div class="form-inline my-2 my-lg-0 nav_item_right">
@@ -73,65 +74,78 @@
                 </div>
             </nav>
         </div>
+
+        <div class="about_bk">
+          
+        </div>
         <div class="clearfix"></div>
         <!-- slider top -->
         <div class="about_us_text_bk">ABOUT US</div>
       </div>
       
       <!-- about us -->
-      <div class="container_custom">
+      <div class="container_custom container_custom_mobile">
         <div class="about_us_top text-center">
             <div class="about_us_intro">
-              <div class="about_us_image"> </div>
+              <!-- <div class="about_us_image"> </div> -->
+              <img src="public/images/background/section-title-image-4.png" class="about_us_image">
               <p class="about_us_text">COMPANY OVERVIEW</p>
               <p class="about_us_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eius mod tempor incididunt ut labore et dolore mag</p>
             </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 box_card">
-            <div class="card" style="width: 24rem;">
+          <div class="col-sm-4 box_card mb-5">
+            <div class="card">
               <img src="public/images/card/home-image-1.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_1">
                 <h5 class="card-title">COMPANY</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
+
               </div>
             </div>
           </div>
 
-          <div class="col-sm-4 box_card">
-            <div class="card" style="width: 24rem;">
+          <div class="col-sm-4 box_card mb-5">
+            <div class="card">
               <img src="public/images/card/home-image-2-1.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_2">
                 <h5 class="card-title">SERVICES</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-4 box_card">
-            <div class="card" style="width: 24rem;">
+          <div class="col-sm-4 box_card mb-5">
+            <div class="card">
               <img src="public/images/card/home-image-3.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_3">
                 <h5 class="card-title">PEOPLE</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
               </div>
             </div>
-          </div>
-            
+          </div>  
         </div>
+
       </div>
 
       <!-- clients -->
-      <div class="container_custom">
+      <div class="container_custom container_custom_mobile">
 
         <div class="client_top text-center">
           <div class="client_intro">
-            <div class="client_image"> </div>
-              <p class="client_text">CLIENTS</p>
+            <!-- <div class="client_image"> </div> -->
+            <img class="client_image" src="public/images/background/section-title-image-3.png">
+            <p class="client_text">CLIENTS</p>
               
             </div>
         </div>

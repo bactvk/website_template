@@ -1,10 +1,10 @@
 /*menu top*/
-.header{
+.about_bk{
     background: url(../images/background/about-us-title-image.jpg);
-    height: 530px;
+    height: 440px;
     background-repeat: no-repeat;
     position: relative;
-    background-size: contain;
+    background-size: cover;
 }
 .bg-custom {
     color: white !important;
@@ -19,22 +19,26 @@
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-}
-.about_us_text_bk {
+
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 52%;
+    top: 25%;
+    left: 36%;
 }
+
 .form-inline.my-2.my-lg-0.nav_item_right {
     list-style: none;
 }
 
+.menu_bar{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
 .menu_bar li {
     padding:0px 20px;
 }
 .menu_bar li a {
-    color: white !important;
+    color: white;
 }
 
 .popup_menu.qode-popup-menu-svg-opener .qode-popup-menu-opener svg *, .side_menu_button .qode-side-menu-button-svg svg path, .side_menu_button .qode-side-menu-button-svg svg>* {
@@ -52,8 +56,8 @@
 }
 .menu_bar .nav-item:hover .nav-link{
     border-bottom: 1px solid white;
+    color: white;
 }
-
 
 /*about us*/
 .container_custom {
@@ -62,10 +66,10 @@
 }
 
 .about_us_image{
-    background: url(../images/background/section-title-image-4.png);
+    /*background: url(../images/background/section-title-image-4.png);
     background-repeat: no-repeat;
     height: 100px;
-    background-position: top;
+    background-position: top;*/
 }
 .about_us_text {
     color: #052941;
@@ -97,7 +101,6 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    font-weight: 600;
     letter-spacing: 0px;
     text-transform: none;
     width: 40%;
@@ -119,12 +122,7 @@
 }
 
 /*client*/
-.client_image{
-    background: url(../images/background/section-title-image-3.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position: top;
-}
+
 
 .client_intro {
     position: relative;
@@ -192,8 +190,64 @@
 
 
 /*reponsive*/
+@media (max-width: 1554px){
+    .about_us_content{
+        width: 47%;
+        bottom: 18%;
+        left: 30%;
+    }
+    .about_us_image{
+        width: 90%;
+    }
+}
 @media (max-width: 992px){
+    .nav-link.active {
+        border-bottom: 1px solid #eaeaea;
+    }
     .side_menu_button {
         display: none;
     }
+   
+    .about_us_text_bk{
+        left: 15%;
+        font-size: 65px;
+    }
+    .about_us_text {
+        top: 15%;
+        left: 5%;
+        font-size: 65px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    .about_us_content{
+        top: 64%;
+        left: 8%;
+        width: 88%;
+        font-size: 17px;
+    }
+    .container_custom_mobile{
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .about_us_top{
+        height: 340px;
+    }
+
+    .client_image {
+        width: 90%;
+    }
+    .client_text{
+        font-size: 60px;
+        top: -5%;
+        left: 18%;
+    }
+    .client_intro {
+        height: 150px;
+    }
+    .about_us_image{
+        top: 26%;
+        position: absolute;
+        left: 5%;
+    }
+    
 }
