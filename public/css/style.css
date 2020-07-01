@@ -1,4 +1,5 @@
 
+
 /*menu top*/
 .header{
     background: #e34530;
@@ -7,11 +8,20 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.menu_bar_mobile_logo{
+    display: none;
+}
 .bg-custom {
 /*    background: #e34530;*/
     color: white !important;
     padding: 0px;
     border-bottom: 1px solid #ffffff75;
+}
+.slider_top .carousel-inner {
+    height: 90vh;
+}
+.slider_top .carousel-indicators{
+    bottom: 5%;
 }
 .trucking_title{
     
@@ -105,7 +115,7 @@
     padding-bottom: 20px;
 }
 .carousel-item-custom .carousel-caption p{
-    font-family: "Work Sans";
+/*    font-family: "Work Sans";*/
     visibility: visible;
     text-align: left;
     line-height: 30px;
@@ -163,10 +173,7 @@
 }
 
 .about_us_image{
-    background: url(../images/background/section-title-image-1.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position: top;
+    max-width: 90%;
 }
 .about_us_text {
     color: #052941;
@@ -177,6 +184,10 @@
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
+
+    position: absolute;
+    top: 15%;
+    left: 38%;
     
 }
 .about_us_intro {
@@ -184,24 +195,21 @@
     height: 270px;
 }
 
-.about_us_text {
-    position: absolute;
-    top: 15%;
-    left: 38%;
-}
+
 .about_us_content {
     position: absolute;
-    bottom: 23%;
+    top: 55%;
     left: 30%;
     color: #4d4d4d;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0px;
     text-transform: none;
-    width: 40%;
+    width: 44%;
+    text-align: center;
 }
 /*card*/
 .card_body_1 {
@@ -218,6 +226,20 @@
 }
 .view_more{
     color: white;
+    font-weight: 500;
+}
+.view_more:hover{
+    text-decoration: none;
+    color: white;
+}
+.view_more .view_more_icon{
+    opacity: 0;
+}
+.view_more:hover .view_more_icon{
+     display: inline-block;
+     opacity: 1;
+     padding-left: 15px;
+     transition: 0.5s;
 }
 
 /*slider bottom*/
@@ -225,7 +247,6 @@
     height: 600px;
     background: url(../images/background/home-parallax-image-1.jpg);
     text-align: center;
-    margin-top: 160px;
     padding: 100px 0;
 }
 .slide_bottom .carousel-item{
@@ -259,10 +280,16 @@
     padding-bottom: 20px;
 }
 .common_questions_image{
-    background: url(../images/background/section-title-image-2.png);
+    /*background: url(../images/background/section-title-image-2.png);*/
     background-repeat: no-repeat;
     height: 100px;
     background-position: top;
+}
+.common_questions_image img{
+    /*width: 90%;*/
+    max-width: 90%;
+
+    object-fit: cover;
 }
 .common_questions_dropdown i{
     font-size: 15px;
@@ -277,7 +304,7 @@
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
-    
+    text-align: center;
 }
 .common_questions_block{
     align-self: center;
@@ -294,7 +321,7 @@
 }
 .common_questions_content {
     position: absolute;
-    bottom: 23%;
+    top: 55%;
     left: 30%;
     color: #4d4d4d;
     font-family: 'Work Sans', sans-serif;
@@ -304,7 +331,7 @@
     font-weight: 300;
     letter-spacing: 0px;
     text-transform: none;
-    width: 40%;
+    width: 44%;
 }
 
 /*common_questions toogle*/
@@ -378,11 +405,12 @@
 }
 
 /*client*/
+.container_custom_client{
+    width: 90%;
+    margin: 100px auto 100px auto;
+}
 .client_image{
-    background: url(../images/background/section-title-image-3.png);
-    background-repeat: no-repeat;
-    height: 100px;
-    background-position: top;
+    /*width: 90%;*/
 }
 
 .client_intro {
@@ -449,11 +477,6 @@
 }
 
 /*Hiệu ứng Jquery Accordion*/
-.hieuung {
-    WIDTH: 100%;
-    MARGIN: auto;
-    padding: 20px;
-}
 
 .motkhoi {
   cursor: pointer;
@@ -565,7 +588,124 @@ p.service_text {
     .side_menu_button {
         display: none;
     }
+    .menu_bar_mobile_logo{
+        display: block;
+        
+    }
+    .menu_bar_logo{
+        display: none;
+    }
+    .bg-custom{
+        background: white;
+        height: auto;
+    }
+    .navbar_menu li a{
+        font-size: 13px;
+        font-weight: 400;
+        color: #888 !important;
+        padding: 10px 0;
+        display: block;
+        position: relative;
+        text-transform: none;
+        line-height: 26px;
+        letter-spacing: 0;
+    }
+    .nav-link,.nav-link.active{
+        border-bottom: 1px solid #eaeaea;
+    }
 
+    .menu_bar .nav-item:hover .nav-link{
+        border-bottom: 1px solid #eaeaea;
+        color: #e34530 !important;
+    }
+    .border_none{
+        border: none;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+        outline: none;
+
+    }
+}
+
+.about_us_text {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+
+@media (max-width: 1336px){
+    .about_us_text {
+        left: 36%;
+    }
+
+}
+@media (max-width: 675px){
+    .about_us_text {
+        font-size: 62px;
+        top: 10%;
+        left: 0%;
+        line-height: 50px;
+        width: 100%;
+    }
+    .about_us_content{
+        width: 90%;
+        top: 48%;
+        left: 6%;
+    }
+    .common_questions_text{
+        font-size: 65px;
+        top: -30px;
+        left: 0%;
+        line-height: 60px;
+    }
+    .common_questions_content{
+        width: 90%;
+        top: 50%;
+        left: 5%;
+    }
+    .client_text{
+        font-size: 65px;
+        top: 0;
+        left: 14%;
+    }
+
+    .trucking_title{
+        font-size: 50px !important;
+        display: block;
+        width: 50% !important;
+        line-height: 50px !important;
+    }
+    .carousel-item-custom{
+        padding : 30px 0px 160px 10px;
+    }
+    .trucking_content{
+        display: block;
+        width: 300px !important;
+    }
+    .trucking_img {
+        width: 86% !important;
+        height: 182px !important;
+        bottom: -380px;
+        position: relative;
+    }
+    .slider_top .carousel-inner{
+        height: 100vh;
+    }
+    .slider_top .carousel-indicators{
+        bottom: 3%;
+    }
+
+    .slide_bottom .carousel-item p{
+        width: 60%;
+        font-size: 18px;
+    }
+    .client_image{
+        width: 90%;
+    }
+    .client_intro{
+        height: 170px;
+    }
 }
 
 

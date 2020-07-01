@@ -26,6 +26,7 @@
         <div class="menu_bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-custom">
                 <img class="menu_bar_logo" src="public/images/logo.jpg">
+                <img class="menu_bar_mobile_logo" src="public/images/mobile-logo.png">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +46,7 @@
                       <a class="nav-link" href="faq.html" tabindex="-1" aria-disabled="true">FAQ</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                      <a class="nav-link border_none" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
                     </li>
                   </ul>
                   <div class="form-inline my-2 my-lg-0 nav_item_right">
@@ -87,16 +88,16 @@
 
                   <div class="carousel-item active carousel-item-custom">
                     <div class="row">
-                      <div class="col-sm-7">
+                      <div class="col-md-7 col-sm-12">
                         <div class="carousel-caption">
                           <h1 class="trucking_title">TRUCKING TRANSPORT SERVICES</h1>
-                          <p>Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
+                          <p class="trucking_content">Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
                            <button>Xem thêm</button>
                         </div>
 
                       </div>
-                      <div class="col-sm-5">
-                        <img src="public/images/slide/rev-image-1.jpg" class="d-block w-100 trucking_image" alt="...">
+                      <div class="col-md-5 col-sm-12 text-center">
+                        <img src="public/images/slide/rev-image-1.jpg" class="w-100 trucking_img" alt="...">
                       </div>
                     </div>
                   </div>
@@ -105,13 +106,13 @@
                     <div class="row">
                       <div class="col-sm-7">
                           <div class="carousel-caption ">
-                          <h1>TRUCKING TRANSPORT SERVICES</h1>
-                          <p>Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
+                          <h1 class="trucking_title">TRUCKING TRANSPORT SERVICES</h1>
+                          <p class="trucking_content">Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
                            <button>Xem thêm</button>
                         </div>  
                       </div>
-                      <div class="col-sm-5">
-                        <img src="public/images/slide/rev-image-2.jpg" class="d-block w-100" alt="...">
+                      <div class="col-sm-5 text-center">
+                        <img src="public/images/slide/rev-image-2.jpg" class="w-100 trucking_img" alt="...">
                       </div>
                     </div>
                   </div>
@@ -120,13 +121,13 @@
                     <div class="row">
                       <div class="col-sm-7">
                           <div class="carousel-caption ">
-                            <h1>TRUCKING TRANSPORT SERVICES</h1>
-                            <p>Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
+                            <h1 class="trucking_title">TRUCKING TRANSPORT SERVICES</h1>
+                            <p class="trucking_content">Lorem ipsum dolor sit amet, consec a tetur adipisic ing elit, sed do eiusmods tempor incididunt ut </p>
                              <button>Xem thêm</button>                        
                           </div>    
                       </div>
-                      <div class="col-sm-5">
-                        <img src="public/images/slide/rev-image-3.jpg" class="d-block w-100" alt="...">
+                      <div class="col-sm-5 text-center">
+                        <img src="public/images/slide/rev-image-3.jpg" class="w-100 trucking_img" alt="...">
                       </div>
                     </div>
                   </div>
@@ -181,44 +182,52 @@
       </div>
       <!-- about us -->
       <div class="container_custom">
-        <div class="about_us_top text-center">
+        <div class="about_us_top text-center mb-5">
             <div class="about_us_intro">
-              <div class="about_us_image"> </div>
+              <!-- <div class="about_us_image"> </div> -->
+              <img class="about_us_image" src="public/images/background/section-title-image-1.png">
               <p class="about_us_text">ABOUT US</p>
               <p class="about_us_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eius mod tempor incididunt ut labore et dolore mag</p>
             </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 box_card">
+          <div class="col-sm-4 box_card mb-5">
             <div class="card">
               <img src="public/images/card/home-image-1.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_1">
                 <h5 class="card-title">COMPANY</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
+
               </div>
             </div>
           </div>
 
-          <div class="col-sm-4 box_card">
+          <div class="col-sm-4 box_card mb-5">
             <div class="card">
               <img src="public/images/card/home-image-2-1.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_2">
                 <h5 class="card-title">SERVICES</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-4 box_card">
+          <div class="col-sm-4 box_card mb-5">
             <div class="card">
               <img src="public/images/card/home-image-3.jpg" class="card-img-top" alt="...">
               <div class="card-body card_body_3">
                 <h5 class="card-title">PEOPLE</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consec a tetur adipisicing elit, sed do eiusmods tempor incididunt ut labore et</p>
-                <a href="#" class="view_more">View more</a>
+                <a href="#" class="view_more">View more
+                  <i class="fa fa-angle-right view_more_icon"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -259,20 +268,22 @@
       <div class="container_custom">
         <div class="common_questions_top text-center">
             <div class="common_questions_intro">
-              <div class="common_questions_image"> </div>
+              <div class="common_questions_image"> 
+                <img src="public/images/background/section-title-image-2.png">
+              </div>
               <p class="common_questions_text">COMMON QUESTIONS</p>
               <p class="common_questions_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eius mod tempor incididunt ut labore et dolore mag</p>
             </div>  
         </div>
       </div>
       <!-- dropdown -->
-      <div class="container_custom">
+      <div class="container_custom" style="margin-top: 0px">
 
           <div class="row">
               <div class="col-sm-6">
                 <img src="public/images/card/home-image-4.jpg" width="100%">
               </div>
-              <div class="col-sm-5 ml-5 common_questions_block">
+              <div class="col-sm-6 common_questions_block">
                       <div class="hieuung">
                         <div class="motkhoi">
                           <div class="motkhoi_title">
@@ -358,14 +369,14 @@
       </div>
 
       <!-- clients -->
-      <div class="container_custom">
+      <div class="container_custom_client">
 
         <div class="client_top text-center">
           <div class="client_intro">
-            <div class="client_image"> </div>
-              <p class="client_text">CLIENTS</p>
+            <img class="client_image" src="public/images/background/section-title-image-3.png">
+            <p class="client_text">CLIENTS</p>
               
-            </div>
+          </div>
         </div>
 
         <div class="row">

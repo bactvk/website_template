@@ -1,6 +1,7 @@
 
 .wrapper{
   width: 100%;
+  overflow: hidden;
 }
 /*menu right*/
 .close_menu img:hover{
@@ -19,9 +20,14 @@
     padding: 100px;
     position: fixed;
     top: 0;
-    right: 0;
+
+    right: -32%;
+    padding-top: 184px;
+    padding-right: 141px;
+    padding-left: 141px;
 
     display: none;
+ 
 }
 .menu_right_content>p{
     color: #ffffff; 
@@ -32,6 +38,7 @@
     line-height: 28px;
 
     font-family: 'Work Sans', sans-serif;
+
 }
 
 
@@ -44,11 +51,7 @@
   line-height: 28px;
   font-family: 'Work Sans', sans-serif;
 }
-.menu_right_content{
-  display: none;
-  right: -32%;
-  padding: 180px 120px 0px 150px;
-}
+
 .close_menu {
     position: absolute;
     top: 21px;
@@ -97,4 +100,11 @@ a.nav-link {
         display: none;
     }
 
+}
+
+@media (max-width: 1366px){
+  .menu_right_content {
+      padding-right: 70px !important;
+      padding-left: 70px !important;
+  }
 }
