@@ -94,6 +94,10 @@
 .nav-link.active{
     border-bottom: 1px solid white;
 }
+.nav-link {
+    display: block;
+    padding: .1rem 1rem;
+}
 .menu_bar .nav-item:hover .nav-link{
     border-bottom: 1px solid white;
 }
@@ -164,7 +168,7 @@
 }
 .icon_section-boxed img {
     width: 80px;
-    height: 76px;
+    height: auto;
 }
 /*about us*/
 .container_custom {
@@ -272,7 +276,7 @@
 
 /*common_question*/
 .container_custom {
-    width: 85%;
+    width: 86%;
     margin: 150px auto 100px auto;
 }
 
@@ -476,7 +480,7 @@
     background: #0b314b;
 }
 
-/*Hiệu ứng Jquery Accordion*/
+/*HiÃ¡Â»â€¡u Ã¡Â»Â©ng Jquery Accordion*/
 
 .motkhoi {
   cursor: pointer;

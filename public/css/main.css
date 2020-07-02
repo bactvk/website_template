@@ -123,6 +123,8 @@ a.nav-link {
 }
 .card{
   text-align: left;
+  width: 90%;
+  /* height: 59%; */
 }
 
 @media (max-width: 650px){

@@ -50,24 +50,26 @@ $(document).ready(function(){
 		$('.motkhoi_title i').removeClass();
 		$('.motkhoi_title i').addClass('fa fa-plus');
 
-		$('.ndmotkhoi').slideUp();
-		$(this).next().slideToggle();
 		
 		if(mode==true){
 			$(this).children('i').removeClass();
 			$(this).children('i').addClass('fa fa-window-minimize');
-			console.log(mode);
 		}
 		if(mode==false){
 			$(this).children('i').removeClass();
 			$(this).children('i').addClass('fa fa-plus');
-			console.log(mode);
 		}
 		mode=!mode;
-		console.log(mode);
+
+
+		$('.ndmotkhoi').not($(this).next()).slideUp();
+		$(this).next().slideToggle();
+	
+
 	});
+
 
 	$("#back_to_top").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, "slow");
-	})
+	});
 })
