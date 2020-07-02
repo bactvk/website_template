@@ -182,5 +182,6 @@ a.nav-link {
     }
     .nav-link.active{
       border-bottom: 1px solid #eaeaea !important;
+      color: #e34530 !important;
     }
 }
