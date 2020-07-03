@@ -171,11 +171,11 @@
     height: auto;
 }
 /*about us*/
-.container_custom {
-    width: 85%;
-    margin: 100px auto;
-}
 
+.container_custom_card{
+    width: 98%;
+    margin: 150px auto 100px auto;
+}
 .about_us_image{
     max-width: 90%;
 }
@@ -245,7 +245,10 @@
      padding-left: 15px;
      transition: 0.5s;
 }
-
+.container_custom_card .card-title{
+    font-size: 28px;
+    font-weight: 700;
+}
 /*slider bottom*/
 .slide_bottom {
     height: 600px;
