@@ -662,7 +662,7 @@ p.service_text {
 
 }
 
-@media (max-width: 770px){
+@media (max-width: 1024px){
     .slider_top .carousel-inner{
         height: 100%;
         padding-bottom: 35px;
@@ -723,6 +723,7 @@ p.service_text {
         max-width: 50%;
         flex: 0 0 50%;
     }
+    
 }
 
 
@@ -791,6 +792,10 @@ p.service_text {
     }
     .client_intro{
         height: 170px;
+    }
+    .box,.col-sm-2_custom{
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 

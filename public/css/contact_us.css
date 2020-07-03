@@ -167,8 +167,36 @@
 }
 
 
-
 /*reponsive*/
+
+@media (max-width: 1024px){
+  .services_bk{
+    height: 460px;
+    width: 100%;
+    background-size: cover;
+  }
+  .about_us_text_bk{
+    transform: translate(0, -50%)
+  }
+  .about_us_text{
+    top: 10%;
+    left: 0%;
+    width: 100%;
+  }
+  .about_us_content{
+    width: 100%;
+    left: 0%;
+  }
+  .fast_delivery_card,.fast_delivery_content{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .fast_delivery_bk{
+    width: 62%;
+  }
+ 
+}
+
 @media (max-width: 992px){
     .side_menu_button {
         display: none;
@@ -207,7 +235,7 @@
         margin-top: 0px;
     }
     .fast_delivery_bk{
-        width: 100%;
+        /*width: 100%;*/
         left: -20px;
         position: relative;
     }
@@ -215,5 +243,98 @@
         font-size: 40px;
         width: 100%;
         left: -32px;
+    }
+}
+
+
+@media (max-width: 770px){
+    .nav-link.active {
+        border-bottom: 1px solid #eaeaea;
+    }
+    .side_menu_button {
+        display: none;
+    }
+   
+    .menu_bar{
+        position: relative;
+    }
+    .services_bk{
+        height: 210px;
+    }
+    .about_us_image{
+        width: 90%;
+    }
+    .about_us_text{
+        font-size: 70px;
+        line-height: 64px;
+        width: 90%;
+        left: 5%;
+        top: 3%;
+    }
+    .about_us_text_bk {
+        position: relative;
+        transform: translate(0, -50%);
+        top: -95px;
+        left: 270px;
+        z-index: 10;
+        font-size: 45px;
+    }
+    .about_us_content{
+        width: 90%;
+        top: 40%;
+        left: 5%;
+    }
+
+    .container_custom_mobile{
+        margin-top: 0px;
+        margin-bottom: 80px;
+    }
+    .about_us_top{
+        height: 340px;
+    }
+
+   
+    .about_us_image{
+        top: 8%;
+        position: absolute;
+        left: 5%;
+    }
+    .col-sm-2_custom{
+        max-width: 33%;
+    }
+    .about_us_top {
+        height: 265px;
+    }
+}
+
+@media (max-width: 640px){
+    .about_us_text_bk{
+        transform: translate(-50%, -50%);
+        top: -75px;
+        left: 235px;
+    }
+    .services_bk{
+        height: 150px;
+    }
+    .col-sm-2_custom{
+        max-width: 100%;
+    }
+   
+    .about_us_text{
+        font-size: 54px;
+        line-height: 48px;
+    }
+    .about_us_content{
+        top: 44%;
+    }
+   
+    .about_us_top{
+        height: 300px;
+    }
+    .fast_delivery_bk{
+        width: 80%;
+    }
+    .input_contact_us{
+        margin-right: 45px;
     }
 }

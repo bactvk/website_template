@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	$('.side_menu_button').click(function(){
-          $(".menu_right_content").css({"right":"0","transition":"0.5s"});
-        })
+      $(".menu_right_content").css({"right":"0","transition":"0.5s"});
+    })
 
-        $('.close_menu').click(function(){
-          $(".menu_right_content").css({"right":"-60%","transition":"0.8s"});
-        })
+    $('.close_menu').click(function(){
+      $(".menu_right_content").css({"right":"-60%","transition":"0.8s"});
+    })
 	// slide up, down
 	$(".common_questions_dropdown").click(function(){
 		$('.common_questions_dropdown_content').slideUp();
@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 	    var scrollPos = $(document).scrollTop();
 	    if(scrollPos > 600){
-	    	$(".menu_right_content").hide(300);
+	    	$(".menu_right_content").css({"right":"-60%"});
 	    	$("#back_to_top").show();
 	    }else{
 	    	$("#back_to_top").hide();

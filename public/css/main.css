@@ -190,3 +190,15 @@ a.nav-link {
       color: #e34530 !important;
     }
 }
+
+@media (max-width: 1024px){
+  /*menu*/
+  .nav_item_right li{
+        display: none;
+    }
+  /*footer*/
+  .box_footer{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
