@@ -18,7 +18,7 @@
     border-bottom: 1px solid #ffffff75;
 }
 .slider_top .carousel-inner {
-    height: 90vh;
+    /*height: 90vh;*/
 }
 .slider_top .carousel-indicators{
     bottom: 5%;

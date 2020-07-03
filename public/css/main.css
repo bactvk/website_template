@@ -32,13 +32,15 @@
     top: 0;
     z-index: 10;
 
-    right: -32%;
+    right: -60%;
     padding-top: 184px;
     padding-right: 141px;
     padding-left: 141px;
 
-    display: none;
+    /*display: none;*/
     opacity: 1 !important;
+    -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
  
 }
 .menu_right_content>p{
