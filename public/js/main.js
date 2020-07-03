@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	//Hiệu ứng Accodion
 	$('.ndmotkhoi').slideUp();
-	var mode = true;
+
 	$('.motkhoi_title').click(function(event){
 		$('.motkhoi_title').children('span').removeClass('span_color'); 
 		$('.motkhoi_title').removeClass('span_color');
@@ -38,20 +38,22 @@ $(document).ready(function(){
 		$(this).addClass('span_color');
 
 
-		$('.motkhoi_title i').removeClass();
-		$('.motkhoi_title i').addClass('fa fa-plus');
 
-		
-		if(mode==true){
-			$(this).children('i').removeClass();
+		if($(this).children('i').hasClass('fa fa-plus')){
+			$('.motkhoi_title i').removeClass();
 			$(this).children('i').addClass('fa fa-window-minimize');
-		}
-		if(mode==false){
+			$('.motkhoi_title i').addClass('fa fa-plus');
+
+		}else if( $(this).children('i').hasClass('fa fa-window-minimize')  ){
 			$(this).children('i').removeClass();
 			$(this).children('i').addClass('fa fa-plus');
-		}
-		mode=!mode;
 
+			$(this).children('span').removeClass('span_color'); 
+			$(this).removeClass('span_color');
+
+		}
+		
+		
 
 		$('.ndmotkhoi').not($(this).next()).slideUp();
 		$(this).next().slideToggle();
