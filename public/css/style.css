@@ -167,8 +167,11 @@
     color: white;
 }
 .icon_section-boxed img {
-    width: 80px;
+    /*width: 80px;*/
     height: auto;
+}
+.icon_section-boxed{
+    height: 102px;
 }
 /*about us*/
 
@@ -404,7 +407,7 @@
 .find_us_content_title{
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 23px;
     line-height: 60px;
     font-style: normal;
     font-weight: 700;
@@ -483,7 +486,6 @@
     background: #0b314b;
 }
 
-/*HiÃ¡Â»â€¡u Ã¡Â»Â©ng Jquery Accordion*/
 
 .motkhoi {
   cursor: pointer;
@@ -647,6 +649,84 @@ p.service_text {
     }
 
 }
+@media (max-width: 1090px){
+    .carousel-item-custom{
+        padding: 80px 0px 180px 80px;
+    }
+
+}
+
+@media (max-width: 940px){
+    .carousel-item-custom{
+        padding: 30px 0px 180px 20px;
+    }
+
+}
+
+@media (max-width: 770px){
+    .slider_top .carousel-inner{
+        height: 100%;
+        padding-bottom: 35px;
+    }
+    .carousel-item-custom{
+        padding: 5px 0px 180px 20px;
+    }
+
+    .trucking_img {
+        width: 86% !important;
+        height: 182px !important;
+        bottom: -165px;
+        position: relative;
+    }
+    .carousel-item-custom h1{
+        font-size: 68px;
+    }
+    .carousel-item-custom .carousel-caption p{
+        width: 300px;
+
+    }
+    .common_questions_text{
+        font-size: 65px;
+        top: -20px;
+        left: 7%;
+        line-height: 60px;
+    }
+    .common_questions_content{
+        top: 32%;
+        left: 10%;
+        width: 77%;
+    }
+    .common_questions_intro{
+        height: 200px;
+    }
+    .common_questions_img,.common_questions_block,.box_card,.find_us_img,.find_us_block,.box_footer{
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    .col-sm-2_custom{
+        width: 48%;
+    }
+    .client_text{
+        top: 12%;
+        left: 30%;
+    }
+    .container_custom_footer_mobile{
+        margin: 140px auto 40px auto;
+    }
+    .about_us_content{
+        width: 70%;
+        left: 14%;
+    }
+    .about_us_text{
+        font-size: 60px;
+    }
+    .box{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+
+
 @media (max-width: 675px){
     .about_us_text {
         font-size: 62px;
