@@ -167,8 +167,8 @@
     color: white;
 }
 .icon_section-boxed img {
-    width: 80px;
-    height: auto;
+    /* width: 80px; */
+    height: 61px;
 }
 /*about us*/
 .container_custom {
