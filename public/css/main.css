@@ -129,6 +129,15 @@ a.nav-link {
   /* height: 59%; */
 }
 
+.box_footer a:hover{
+  text-decoration: none;
+  color: #4d4d4d;
+
+}
+.card,.card-img-top{
+  border-radius: 0px;
+}
+
 @media (max-width: 650px){
     #back_to_top {
         display: none;
@@ -198,7 +207,14 @@ a.nav-link {
     }
   /*footer*/
   .box_footer{
-    max-width: 100%;
-    flex: 0 0 100%;
+    max-width: 25%;
+    flex: 0 0 25%;
   }
+}
+
+@media (max-width: 770px){
+    .box_footer{
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
 }

@@ -105,18 +105,19 @@
 
 .carousel-item-custom {
     background: #e34530;
-    padding: 160px 0px 160px 80px;
+    padding: 95px 0px 160px 80px;
 }
 .carousel-item-custom h1{
 
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     text-align: left;
-    line-height: 80px;
+    line-height: 86px;
     font-weight: 700;
     font-size: 80px;
     width: 649px;
     padding-bottom: 20px;
+    margin-top : -25px;
 }
 .carousel-item-custom .carousel-caption p{
 /*    font-family: "Work Sans";*/
@@ -270,7 +271,7 @@
     font-style: normal;
     font-weight: 300;
     letter-spacing: 0px;
-    width: 51%;
+    width: 80%;
     margin : 30px auto;
 }
 .slide_bottom .carousel-item h4{
@@ -455,8 +456,15 @@
         margin-bottom: 20px;
         
     }
+    .carousel-item div{
+        height: 20% !important;
+    }
 }
-
+@media (max-width: 640px){
+    .carousel-item div{
+        height: 0 !important;
+    }
+}
 .box_footer,.box_footer p a{
     color: white;
 }
@@ -648,6 +656,81 @@ p.service_text {
     }
 
 }
+
+
+@media (max-width: 1024px){
+    .slider_top .carousel-inner{
+        height: 100%;
+        padding-bottom: 35px;
+    }
+    .carousel-item-custom{
+        padding: 5px 0px 180px 20px;
+    }
+
+    .trucking_img {
+        width: 86% !important;
+        height: 240px !important;
+        bottom: -124px;
+        position: relative;
+    }
+    .carousel-item-custom h1{
+        font-size: 68px;
+    }
+    .carousel-item-custom .carousel-caption p{
+        width: 300px;
+
+    }
+    .common_questions_text{
+        font-size: 76px;
+        top: 25px;
+        left: 12%;
+        line-height: 60px;
+    }
+    .common_questions_content{
+        top: 50%;
+        left: 7%;
+        width: 86%;
+        font-size: 17px;
+    }
+    .common_questions_intro{
+        height: 200px;
+    }
+    .common_questions_image img{
+        max-width: 100%;
+    }
+    .common_questions_img,.common_questions_block,.box_card,.find_us_img,.find_us_block{
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    .col-sm-2_custom{
+        width: 48%;
+    }
+    .client_text{
+        top: 12%;
+        left: 35%;
+    }
+    .container_custom_footer_mobile{
+        width: 90%;
+        margin: 80px auto 80px auto ;
+    }
+    .about_us_content{
+        width: 70%;
+        left: 14%;
+    }
+    .about_us_text{
+        font-size: 75px;
+        left: 35%;
+    }
+    .box{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .slider_top .carousel-indicators{
+        bottom: 0%;
+    }
+}
+
 @media (max-width: 1090px){
     .carousel-item-custom{
         padding: 80px 0px 180px 80px;
@@ -662,71 +745,25 @@ p.service_text {
 
 }
 
-@media (max-width: 1024px){
-    .slider_top .carousel-inner{
-        height: 100%;
-        padding-bottom: 35px;
-    }
-    .carousel-item-custom{
-        padding: 5px 0px 180px 20px;
-    }
-
-    .trucking_img {
-        width: 86% !important;
-        height: 182px !important;
-        bottom: -165px;
-        position: relative;
-    }
-    .carousel-item-custom h1{
-        font-size: 68px;
-    }
-    .carousel-item-custom .carousel-caption p{
-        width: 300px;
-
-    }
-    .common_questions_text{
-        font-size: 65px;
-        top: -20px;
-        left: 7%;
-        line-height: 60px;
-    }
-    .common_questions_content{
-        top: 32%;
-        left: 10%;
-        width: 77%;
-    }
-    .common_questions_intro{
-        height: 200px;
-    }
-    .common_questions_img,.common_questions_block,.box_card,.find_us_img,.find_us_block,.box_footer{
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
-    }
+@media (max-width: 770px){
     .col-sm-2_custom{
-        width: 48%;
+        width: 33%;
     }
     .client_text{
-        top: 12%;
         left: 30%;
     }
-    .container_custom_footer_mobile{
-        margin: 140px auto 40px auto;
-    }
-    .about_us_content{
-        width: 70%;
-        left: 14%;
-    }
-    .about_us_text{
+    .common_questions_text {
         font-size: 60px;
     }
-    .box{
-        max-width: 50%;
-        flex: 0 0 50%;
+    .common_questions_content{
+       left: 12%;
+        width: 77%;
+        font-size: 18px; 
     }
-    
+    .about_us_text{
+        left: 30%;
+    }
 }
-
-
 @media (max-width: 675px){
     .about_us_text {
         font-size: 62px;
@@ -780,7 +817,7 @@ p.service_text {
         height: 100vh;
     }
     .slider_top .carousel-indicators{
-        bottom: 3%;
+        bottom: 0%;
     }
 
     .slide_bottom .carousel-item p{
