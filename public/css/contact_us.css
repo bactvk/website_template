@@ -176,7 +176,9 @@
     background-size: cover;
   }
   .about_us_text_bk{
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
+    top: 20%;
+    left: 22%;
   }
   .about_us_text{
     top: 10%;
@@ -336,5 +338,23 @@
     }
     .input_contact_us{
         margin-right: 45px;
+    }
+}
+
+@media (max-width: 414px){
+    .about_us_text_bk{
+        left: 300px;
+    }
+}
+
+@media (max-width: 375px){
+    .about_us_text_bk{
+        left: 257px;
+    }
+}
+
+@media (max-width: 320px){
+    .about_us_text_bk{
+        left: 200px;
     }
 }

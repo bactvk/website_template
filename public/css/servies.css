@@ -236,7 +236,9 @@
     background-size: cover;
   }
   .about_us_text_bk{
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
+    top: 18%;
+    left: 29%;
   }
   .about_us_text{
     top: 10%;
@@ -409,7 +411,7 @@
     .about_us_text_bk{
         transform: translate(-50%, -50%);
         top: -75px;
-        left: 235px;
+        left: 270px;
     }
     .services_bk{
         height: 150px;
@@ -428,5 +430,30 @@
    
     .about_us_top{
         height: 300px;
+    }
+}
+
+
+@media (max-width: 414px){
+    .about_us_text_bk{
+        top: -78px;
+        left: 325px;
+    }
+}
+
+@media (max-width: 375px){
+    .about_us_text_bk{
+        left: 290px;
+    }
+}
+@media (max-width: 360px){
+    .about_us_text_bk{
+        left: 275px;
+    }
+}
+@media (max-width: 320px){
+    .about_us_text_bk{
+        top: -76px;
+        left: 232px;
     }
 }

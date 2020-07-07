@@ -19,7 +19,7 @@
     height: 450px;
     background-repeat: no-repeat;
     position: relative;
-    background-size: contain;
+    background-size: cover;
 }
 .bg-custom {
     color: white !important;
@@ -220,6 +220,12 @@
 
 
 /*reponsive*/
+@media (max-width: 1024px){
+    .about_us_text_bk{
+        left: 50%;
+    }
+}
+
 @media (max-width: 992px){
     .side_menu_button {
         display: none;
@@ -259,5 +265,49 @@
     }
     .motkhoi_title{
         height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .services_bk{
+        height: 200px;
+    }
+    .about_us_text_bk{
+        top: -90px;
+        left: 382px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 640px){
+    .about_us_text_bk{
+        top: -98px;
+        left: 179px;
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 414px){
+    .about_us_text_bk{
+        top: -92px;
+        left: 200px;
+    }
+}
+
+@media (max-width: 375px){
+    .about_us_text_bk{
+        left: 186px;
+    }
+}
+@media (max-width: 360px){
+    .about_us_text_bk{
+        top: -92px;
+        left: 178px;
+    }
+}
+@media (max-width: 320px){
+    .about_us_text_bk{
+        top: -90px;
+        left: 160px;
     }
 }
