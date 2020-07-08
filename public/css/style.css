@@ -1,6 +1,13 @@
 
 
 /*menu top*/
+.menu_bar{
+  position: fixed;
+  width: 100%;
+  background: #e34530;
+  z-index: 10;
+  top: 0;
+}
 .header{
     background: #e34530;
 }
@@ -17,12 +24,25 @@
     padding: 0px;
     border-bottom: 1px solid #ffffff75;
 }
+.slider_top{
+    height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+}
 .slider_top .carousel-inner {
-    /*height: 90vh;*/
 }
 .slider_top .carousel-indicators{
-    bottom: 5%;
+    bottom: -30%;
 }
+.first_view{
+    
+    
+}
+.trucking_block{
+    width: 60%;
+    margin-left: 22%;
+}
+
 .trucking_title{
     
     font-family: "Roboto Condensed";
@@ -41,7 +61,6 @@
     color: rgb(255, 255, 255);
     text-decoration: none;
     white-space: normal;
-    width: 649px;
     height: auto;
     min-height: 0px;
     min-width: 0px;
@@ -51,6 +70,28 @@
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform-origin: 50% 50% 0px;
 
+}
+.trucking_content{
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 45px;
+    line-height: 30px;
+}
+.view_more_trucking{
+    background-color: rgb(5, 41, 65);
+    font-family: "Work Sans";
+    font-weight: 300;
+    font-size: 16px;
+    padding: 15px 43px;
+    color: #fff;
+    display: inline-block;
+}
+.view_more_trucking:hover{
+    text-decoration: none;
+    color: white;
+    background : rgb(11,49,74);
 }
 .trucking_image{
     overflow: hidden;
@@ -69,6 +110,9 @@
     opacity: 1;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     transform-origin: 50% 50% 0px;
+}
+.img_trucking_block{
+    text-align: right;
 }
 .form-inline.my-2.my-lg-0.nav_item_right {
     list-style: none;
@@ -103,21 +147,23 @@
 }
 /*slider*/
 
+.slider_image{
+    width: 85.8%;
+    display: inline-block;
+}
 .carousel-item-custom {
     background: #e34530;
-    padding: 95px 0px 160px 80px;
+    /*padding: 95px 0px 160px 80px;*/
 }
 .carousel-item-custom h1{
 
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     text-align: left;
-    line-height: 86px;
+    line-height: 80px;
     font-weight: 700;
     font-size: 80px;
-    width: 649px;
     padding-bottom: 20px;
-    margin-top : -25px;
 }
 .carousel-item-custom .carousel-caption p{
 /*    font-family: "Work Sans";*/
@@ -257,11 +303,21 @@
     height: 600px;
     background: url(../images/background/home-parallax-image-1.jpg);
     text-align: center;
-    padding: 100px 0;
+   
+}
+.slide_bottom .carousel-inner,.slide_bottom .carousel-item{
+    height: 100%;
+}
+.bd-example,#carouselExampleCaptions2{
+    height: 100%;
+
 }
 .slide_bottom .carousel-item{
-    height: 500px;
+    display: flex;
+    align-items: center;
 }
+
+
 .slide_bottom .carousel-item p{
     color: #ffffff;
     font-size: 20px;
@@ -456,14 +512,10 @@
         margin-bottom: 20px;
         
     }
-    .carousel-item div{
-        height: 20% !important;
-    }
+    
 }
 @media (max-width: 640px){
-    .carousel-item div{
-        height: 0 !important;
-    }
+    
 }
 .box_footer,.box_footer p a{
     color: white;
@@ -599,56 +651,14 @@ p.service_text {
     font-weight: 300;
 }
 
-/*reponsive*/
-@media (max-width: 992px){
-    .side_menu_button {
+
+@media screen and (max-width: 1350px){
+    .nav_item_right .nav-item{
         display: none;
     }
-    .menu_bar_mobile_logo{
-        display: block;
-        
-    }
-    .menu_bar_logo{
-        display: none;
-    }
-    .bg-custom{
-        background: white;
-        height: auto;
-    }
-    .navbar_menu li a{
-        font-size: 13px;
-        font-weight: 400;
-        color: #888 !important;
-        padding: 10px 0;
-        display: block;
-        position: relative;
-        text-transform: none;
-        line-height: 26px;
-        letter-spacing: 0;
-    }
-    .nav-link,.nav-link.active{
-        border-bottom: 1px solid #eaeaea;
-    }
-
-    .menu_bar .nav-item:hover .nav-link{
-        border-bottom: 1px solid #eaeaea;
-        color: #e34530 !important;
-    }
-    .border_none{
-        border: none;
-    }
-    .navbar-light .navbar-toggler{
-        border: none;
-        outline: none;
-
-    }
+    
 }
 
-.about_us_text {
-    position: absolute;
-    top: 15%;
-    left: 38%;
-}
 
 @media (max-width: 1336px){
     .about_us_text {
@@ -658,19 +668,23 @@ p.service_text {
 }
 
 
+/*reponsive*/
+
+
+
+
 @media (max-width: 1024px){
     .slider_top .carousel-inner{
         height: 100%;
         padding-bottom: 35px;
     }
-    .carousel-item-custom{
+    /*.carousel-item-custom{
         padding: 5px 0px 180px 20px;
-    }
+    }*/
 
     .trucking_img {
-        width: 86% !important;
-        height: 240px !important;
-        bottom: -124px;
+        width: 100%;
+        /*bottom: -124px;*/
         position: relative;
     }
     .carousel-item-custom h1{
@@ -729,20 +743,77 @@ p.service_text {
 }
 
 @media (max-width: 1090px){
-    .carousel-item-custom{
-        padding: 80px 0px 180px 80px;
-    }
+    
 
 }
 
-@media (max-width: 940px){
-    .carousel-item-custom{
-        padding: 30px 0px 180px 20px;
+@media screen and (max-width: 992px){
+    .slider_top {
+        height: initial;
+        margin-top: 91px;
     }
 
+    .side_menu_button {
+        display: none;
+    }
+    .menu_bar_mobile_logo{
+        display: block;
+        
+    }
+    .menu_bar_logo{
+        display: none;
+    }
+    .bg-custom{
+        background: white;
+        height: auto;
+    }
+    .navbar_menu li a{
+        font-size: 13px;
+        font-weight: 400;
+        color: #888 !important;
+        padding: 10px 0;
+        display: block;
+        position: relative;
+        text-transform: none;
+        line-height: 26px;
+        letter-spacing: 0;
+    }
+    .nav-link,.nav-link.active{
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .menu_bar .nav-item:hover .nav-link{
+        border-bottom: 1px solid #eaeaea;
+        color: #e34530 !important;
+    }
+    .border_none{
+        border: none;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+        outline: none;
+
+    }
 }
 
-@media (max-width: 770px){
+.about_us_text {
+    position: absolute;
+    top: 15%;
+    left: 38%;
+}
+
+
+
+
+@media (max-width: 768px){
+    .trucking_block {
+        width: 80%;
+        margin: 40px auto;
+    }
+    .img_trucking_block{
+        text-align: center;
+        margin-top: 0px;
+    }
     .col-sm-2_custom{
         width: 33%;
     }
@@ -760,6 +831,9 @@ p.service_text {
     .about_us_text{
         left: 30%;
     }
+    .carousel-item-custom h1{
+        font-size: 40px;
+    }
 }
 @media (max-width: 675px){
     .about_us_text {
@@ -775,7 +849,7 @@ p.service_text {
         left: 6%;
     }
     .common_questions_text{
-        font-size: 65px;
+        font-size: 60px;
         top: -30px;
         left: 0%;
         line-height: 60px;
@@ -792,24 +866,17 @@ p.service_text {
     }
 
     .trucking_title{
-        font-size: 50px !important;
+        /*font-size: 50px;*/
         display: block;
-        width: 50% !important;
         line-height: 50px !important;
     }
-    .carousel-item-custom{
-        padding : 30px 0px 160px 10px;
-    }
+   
+
     .trucking_content{
         display: block;
-        width: 300px !important;
+        
     }
-    .trucking_img {
-        width: 86% !important;
-        height: 182px !important;
-        bottom: -380px;
-        position: relative;
-    }
+    
     .slider_top .carousel-inner{
         height: 100vh;
     }
@@ -833,5 +900,10 @@ p.service_text {
     }
 }
 
+@media (max-width: 360px){
+    .first_view{
+        padding-bottom: 20px;
+    }
+}
 
 /*about-us.html*/
