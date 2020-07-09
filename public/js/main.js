@@ -58,11 +58,41 @@ $(document).ready(function(){
 		$('.ndmotkhoi').not($(this).next()).slideUp();
 		$(this).next().slideToggle();
 	
-
 	});
 
 
 	$("#back_to_top").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 	});
+
+	if($(".slider_top").length > 0){
+
+		setHeightSlider();
+
+		$(window).on('resize', function(){
+	      // var win = $(this); //this = window
+	      setHeightSlider();
+	      
+		});
+		
+	}
+	
+	function setHeightSlider()
+	{
+		// pc screen
+		if( !(window.matchMedia( "(max-width: 768px)" ).matches)  )
+		{
+			if (window.innerHeight < 700) { 
+		      	$(".slider_top .carousel").css({"height":"initial","padding":"135px 0"});
+		    }else{
+		    	$(".slider_top .carousel").css({"height":"calc(100vh - 91px)","padding":"0"});
+		    }
+		}else{
+			
+			$(".slider_top .carousel").css({"height":"initial","padding":"0"});
+		}
+		
+	}
+
+
 })
