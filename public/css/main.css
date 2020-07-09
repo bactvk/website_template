@@ -56,7 +56,13 @@
 
 }
 
-
+.navbar_menu li a,.nav_item_right li span{
+    font-family: 'Work Sans', sans-serif;
+}
+.nav-link {
+    display: block;
+    padding: .1rem 1rem;
+}
 .menu_right_content_text p{
   color: #ffffff;
   font-size: 14px;
