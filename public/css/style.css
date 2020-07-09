@@ -731,11 +731,23 @@ p.service_text {
 }
 
 @media (max-width: 1090px){
-    
+
+}
+
+@media (min-width: 768.02px) and (max-width: 992px) {
+    .trucking_block {
+        width: 90%;
+        margin-left: 10%;
+    }
+    .carousel-item-custom h1 {
+        font-size: 40px;
+        line-height: 1.5;
+    }
 
 }
 
 @media screen and (max-width: 992px){
+    
     .slider_top .carousel{
         height: initial;
         margin-top: 91px;

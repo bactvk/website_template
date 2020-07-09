@@ -82,7 +82,7 @@ $(document).ready(function(){
 		// pc screen
 		if( !(window.matchMedia( "(max-width: 768px)" ).matches)  )
 		{
-			if (window.innerHeight < 700) { 
+			if (window.innerHeight < 600) { 
 		      	$(".slider_top .carousel").css({"height":"initial","padding":"135px 0"});
 		    }else{
 		    	$(".slider_top .carousel").css({"height":"calc(100vh - 91px)","padding":"0"});
