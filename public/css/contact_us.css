@@ -14,11 +14,13 @@
     z-index: 2;
 }
 .services_bk{
-    background: url(../images/background/contact-us-title-image.jpg);
-    height: 450px;
+    background: url(../images/background/contact-us-title-image.jpg) center center;
+    height: 530px;
     background-repeat: no-repeat;
-    position: relative;
-    background-size: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-custom {
@@ -35,12 +37,7 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.about_us_text_bk {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 30%;
-    left: 52%;
-}
+
 .form-inline.my-2.my-lg-0.nav_item_right {
     list-style: none;
 }
@@ -174,11 +171,7 @@
     width: 100%;
     background-size: cover;
   }
-  .about_us_text_bk{
-    transform: translate(0, -50%);
-    top: 20%;
-    left: 22%;
-  }
+  
   .about_us_text{
     top: 10%;
     left: 0%;
@@ -220,11 +213,7 @@
         top: -10%;
     }
     .about_us_text_bk {
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: -95px;
-        left: 245px;
-        z-index: 10;
+
         font-size: 45px;
     }
     .about_us_content{
@@ -232,9 +221,7 @@
         top: 40%;
         left: 5%;
     }
-    .container_custom{
-        margin-top: 0px;
-    }
+    
     .fast_delivery_bk{
         /*width: 100%;*/
         left: -20px;
@@ -249,6 +236,9 @@
 
 
 @media (max-width: 770px){
+    .touch_address{
+        margin-top: 10px;
+    }
     .nav-link.active {
         border-bottom: 1px solid #eaeaea;
     }
@@ -272,14 +262,8 @@
         left: 5%;
         top: 3%;
     }
-    .about_us_text_bk {
-        position: relative;
-        transform: translate(0, -50%);
-        top: -95px;
-        left: 270px;
-        z-index: 10;
-        font-size: 45px;
-    }
+   
+
     .about_us_content{
         width: 90%;
         top: 40%;
@@ -309,11 +293,8 @@
 }
 
 @media (max-width: 640px){
-    .about_us_text_bk{
-        transform: translate(-50%, -50%);
-        top: -75px;
-        left: 235px;
-    }
+    
+
     .services_bk{
         height: 150px;
     }
@@ -340,20 +321,3 @@
     }
 }
 
-@media (max-width: 414px){
-    .about_us_text_bk{
-        left: 300px;
-    }
-}
-
-@media (max-width: 375px){
-    .about_us_text_bk{
-        left: 257px;
-    }
-}
-
-@media (max-width: 320px){
-    .about_us_text_bk{
-        left: 200px;
-    }
-}

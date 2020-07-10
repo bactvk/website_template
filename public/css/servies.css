@@ -8,11 +8,12 @@
 }
 
 .services_bk{
-    background: url(../images/background/services-title-image.jpg);
-    height: 450px;
+    background: url(../images/background/services-title-image.jpg) center center;
+    height: 530px;
     background-repeat: no-repeat;
-    position: relative;
-    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bg-custom {
     color: white !important;
@@ -28,12 +29,7 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-.about_us_text_bk {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 30%;
-    left: 52%;
-}
+
 .form-inline.my-2.my-lg-0.nav_item_right {
     list-style: none;
 }
@@ -69,11 +65,11 @@
 }
 .container_custom_what {
     width: 85%;
-    margin: 100px auto 10px auto;
+    margin: 10px auto 30px auto;
 }
 .container_custom_fast{
     width: 85%;
-    margin: 50px auto 10px auto;
+    margin: 70px auto 10px auto;
 }
 
 .about_us_image{
@@ -88,7 +84,7 @@
     font-size: 80px;
     line-height: 90px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 0px;
     text-transform: uppercase;
     
@@ -96,17 +92,19 @@
 .about_us_intro {
     position: relative;
     height: 270px;
-}
+    background: url(../images/background/section-title-image-6.png) no-repeat center center;
 
-.about_us_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.about_us_block{
     position: absolute;
-    top: 15%;
-    left: 34%;
+    bottom: -20px;
 }
 .about_us_content {
-    position: absolute;
-    bottom: 23%;
-    left: 30%;
     color: #4d4d4d;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
@@ -114,7 +112,9 @@
     font-style: normal;
     letter-spacing: 0px;
     text-transform: none;
-    width: 48%;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 300;
 }
 
 /*fast_delivery*/
@@ -234,20 +234,7 @@
     width: 100%;
     background-size: cover;
   }
-  .about_us_text_bk{
-    transform: translate(0, -50%);
-    top: 18%;
-    left: 29%;
-  }
-  .about_us_text{
-    top: 10%;
-    left: 0%;
-    width: 100%;
-  }
-  .about_us_content{
-    width: 100%;
-    left: 0%;
-  }
+
  
 
 }
@@ -264,26 +251,11 @@
     .about_us_image{
         width: 90%;
     }
-    .about_us_text{
-        font-size: 70px;
-        line-height: 64px;
-        width: 90%;
-        left: 10%;
-        top: -10%;
-    }
+    
     .about_us_text_bk {
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: -95px;
-        left: 270px;
-        z-index: 10;
         font-size: 45px;
     }
-    .about_us_content{
-        width: 90%;
-        top: 40%;
-        left: 5%;
-    }
+    
     .fast_delivery{
         text-align: center;
     }
@@ -323,6 +295,7 @@
         padding-left: 0px !important;
         line-height: 40px;
         top: -24px;
+        text-align: left;
     }
     .order_tracking_content{
         padding-left: 0px !important;
@@ -357,33 +330,15 @@
     .menu_bar{
         position: relative;
     }
-    .services_bk{
-        height: 210px;
-    }
-    .about_us_image{
-        width: 90%;
-    }
-    .about_us_text{
-        font-size: 70px;
-        line-height: 64px;
-        width: 90%;
-        left: 5%;
-        top: 3%;
-    }
-    .about_us_text_bk {
-        position: relative;
-        transform: translate(0, -50%);
-        top: -95px;
-        left: 270px;
-        z-index: 10;
-        font-size: 45px;
+    .about_us_intro{
+        background-size: contain;
     }
     .about_us_content{
-        width: 90%;
-        top: 40%;
-        left: 5%;
+        width: 82%;
     }
-
+    .about_us_text{
+        font-size: 50px;
+    }
     .container_custom_mobile{
         margin-top: 0px;
         margin-bottom: 80px;
@@ -392,12 +347,7 @@
         height: 340px;
     }
 
-   
-    .about_us_image{
-        top: 8%;
-        position: absolute;
-        left: 5%;
-    }
+  
     .col-sm-2_custom{
         max-width: 33%;
     }
@@ -407,11 +357,7 @@
 }
 
 @media (max-width: 640px){
-    .about_us_text_bk{
-        transform: translate(-50%, -50%);
-        top: -75px;
-        left: 270px;
-    }
+    
     .services_bk{
         height: 150px;
     }
@@ -419,40 +365,14 @@
         max-width: 100%;
     }
    
-    .about_us_text{
-        font-size: 54px;
-        line-height: 48px;
-    }
-    .about_us_content{
-        top: 44%;
-    }
+
    
     .about_us_top{
         height: 300px;
     }
-}
-
-
-@media (max-width: 414px){
-    .about_us_text_bk{
-        top: -78px;
-        left: 325px;
+    .about_us_block {
+       
+        bottom: -80px;
     }
 }
 
-@media (max-width: 375px){
-    .about_us_text_bk{
-        left: 290px;
-    }
-}
-@media (max-width: 360px){
-    .about_us_text_bk{
-        left: 275px;
-    }
-}
-@media (max-width: 320px){
-    .about_us_text_bk{
-        top: -76px;
-        left: 232px;
-    }
-}

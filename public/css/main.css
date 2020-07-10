@@ -213,6 +213,14 @@ a.nav-link {
     }
 }
 
+
+@media screen and (max-width: 1350px){
+    .nav_item_right .nav-item{
+        display: none;
+    }
+    
+}
+
 @media (max-width: 1024px){
   /*menu*/
   .nav_item_right li{

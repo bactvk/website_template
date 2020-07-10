@@ -7,11 +7,13 @@
     background-size: cover;*/
 }
 .services_bk{
-    background: url(../images/background/about-us-title-image.jpg);
-    height: 450px;
+    background: url(../images/background/about-us-title-image.jpg) center center;
+    height: 530px;
     background-repeat: no-repeat;
-    position: relative;
-    background-size: contain;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg-custom {
@@ -28,9 +30,7 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    position: absolute;
-    top: 25%;
-    left: 36%;
+   
 }
 
 .form-inline.my-2.my-lg-0.nav_item_right {
@@ -91,20 +91,21 @@
 .about_us_intro {
     position: relative;
     height: 270px;
+    background: url(../images/background/section-title-image-4.png) no-repeat center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 }
 .container_custom_mobile .card-title{
     font-size: 28px;
     font-weight: 700;
 }
-.about_us_text {
-    position: absolute;
-    top: 15%;
-    left: 24%;
-}
+
 .about_us_content {
-    position: absolute;
-    bottom: 23%;
-    left: 30%;
+    
     color: #4d4d4d;
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
@@ -112,7 +113,14 @@
     font-style: normal;
     letter-spacing: 0px;
     text-transform: none;
-    width: 40%;
+    width: 60%;
+
+    margin: 0 auto;
+    font-weight: 300;
+}
+.about_us_block{
+    position: absolute;
+    bottom: -20px;
 }
 .card_body_1 {
     background: #e34530;
@@ -132,9 +140,11 @@
 
 .container_custom_card{
     width: 98%;
-    margin: 150px auto 100px auto;
+    margin: 10px auto 100px auto;
 }
-
+.card_content{
+    margin-top: 80px;
+}
 /*client*/
 
 
@@ -165,13 +175,7 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-@media (max-width: 960px){
-    .col-sm-2_custom{
-        max-width: 100%;
-        margin-bottom: 20px;
-        
-    }
-}
+
 
 /*footer*/
 .box_footer,.box_footer p a{
@@ -204,16 +208,7 @@
 
 
 /*reponsive*/
-@media (max-width: 1554px){
-    .about_us_content{
-        width: 47%;
-        bottom: 18%;
-        left: 30%;
-    }
-    .about_us_image{
-        width: 90%;
-    }
-}
+
 
 @media (max-width: 1024px){
   .services_bk{
@@ -221,19 +216,9 @@
     width: 100%;
     background-size: cover;
   }
-  .about_us_text_bk{
-    transform: translate(0, -50%);
-    top: 18%;
-    left: 27%;
-  }
-  .about_us_text{
-    top: 10%;
-    left: 0%;
-    width: 100%;
-  }
-  .about_us_content{
-    width: 100%;
-    left: 0%;
+  
+  .about_us_intro{
+    background-size: contain;
   }
   .box_card{
     max-width: 100%;
@@ -268,25 +253,9 @@
     .about_us_image{
         width: 90%;
     }
-    .about_us_text{
-        font-size: 70px;
-        line-height: 64px;
-        width: 90%;
-        left: 5%;
-        top: 3%;
-    }
+
     .about_us_text_bk {
-        position: relative;
-        transform: translate(0, -50%);
-        top: -95px;
-        left: 270px;
-        z-index: 10;
         font-size: 45px;
-    }
-    .about_us_content{
-        width: 90%;
-        top: 40%;
-        left: 5%;
     }
 
     .container_custom_mobile{
@@ -319,12 +288,14 @@
     .about_us_top {
         height: 265px;
     }
+
+    .about_us_content{
+        width: 85%;
+    }
 }
 
 @media (max-width: 640px){
-    .about_us_text_bk{
-        transform: translate(-50%, -50%)
-    }
+    
     .services_bk{
         height: 150px;
     }
@@ -338,13 +309,15 @@
     .client_image{
         width: 90%;
     }
-    .about_us_text{
-        font-size: 54px;
-        line-height: 48px;
+    
+   .about_us_text {
+        font-size: 60px;
+        line-height: 65px;
     }
-    .about_us_content{
-        top: 44%;
+    .about_us_block{
+        bottom: -70px;
     }
+
     .card{
         width: 85%;
     }
@@ -353,26 +326,3 @@
     }
 }
 
-@media (max-width: 414px){
-    .about_us_text_bk{
-        top: -78px;
-        left: 325px;
-    }
-}
-
-@media (max-width: 375px){
-    .about_us_text_bk{
-        left: 290px;
-    }
-}
-@media (max-width: 360px){
-    .about_us_text_bk{
-        left: 275px;
-    }
-}
-@media (max-width: 320px){
-    .about_us_text_bk{
-        top: -76px;
-        left: 232px;
-    }
-}
