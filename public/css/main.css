@@ -7,7 +7,35 @@ body{
   overflow: hidden;
 }
 
+
+/*wordpress*/
+
 /*menu top*/
+.menu-item:hover a{
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+.current-menu-item a{
+  border-bottom: 1px solid #fff;
+}
+
+
+/*card block*/
+.card img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/**/
+
+ul#menu-menu-1 li {
+    display: inline-block;
+}
+ul#menu-menu-1 {
+    list-style: none;
+}
+
+
 .menu_bar_mobile_logo{
     display: none;
 }

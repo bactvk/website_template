@@ -30,11 +30,28 @@
     align-items: center;
     margin-top: 91px;
 }
-
-.first_view{
-    
-    
+/*wp*/
+.n2-ss-slider-2 n2-ow{
+    /*height: calc(100vh - 91px) !important;
+    display: flex;
+    align-items: center;
+    margin-top: 91px;*/
 }
+
+div#n2-ss-2 .n2-ss-layers-container{
+    /*width: 100% !important;*/
+}
+div#n2-ss-2-arrow-previous,div#n2-ss-2-arrow-next,div#n2-ss-3-arrow-previous,div#n2-ss-3-arrow-next{
+    display: none;
+}
+
+.post_detail{
+    margin-top: 150px;
+}
+
+/**/
+
+
 .trucking_block{
     width: 60%;
     margin-left: 22%;
@@ -738,6 +755,7 @@ p.service_text {
         line-height: 1.5;
     }
 
+
 }
 
 @media screen and (max-width: 992px){
@@ -831,6 +849,10 @@ p.service_text {
     }
     .carousel-item-custom h1{
         font-size: 40px;
+    }
+
+    .post_detail{
+        margin-top: 90px;
     }
 }
 @media (max-width: 675px){

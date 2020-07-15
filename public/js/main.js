@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$('.side_menu_button').click(function(){
       $(".menu_right_content").css({"right":"0","transition":"0.5s"});
     })
