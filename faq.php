@@ -12,7 +12,7 @@
       </div>
       
       
-      <!-- FAST DELIVERY -->
+      <!-- FAST DELIVERY, ok -->
       <div class="container_custom">
           <div class="row">
               <div class="col-lg-4 col-md-12 col-sm-12 align-self-center">
