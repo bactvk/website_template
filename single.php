@@ -16,9 +16,7 @@
             <?php while(have_posts()) : the_post(); ?>
             	<div class="meta">
             		<span>Ngày đăng: <?php echo get_the_date('d - m - Y') ?></span>
-            		<!-- <span>Tác giả: <?php echo get_the_author() ?></span>
-            		<span>Chuyên mục: <?php echo the_category(', ')['name'] ?></span>
-            		<span>Lượt xem: 1112</span> -->
+            		
             	</div>
             	<article class="post-content">
             		<?php the_content() ?>

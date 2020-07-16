@@ -1,4 +1,5 @@
 <?php 
+	// a
 	function theme_settup() {
 	    register_nav_menu('topmenu',__( 'Menu chính' ));
 

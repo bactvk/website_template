@@ -75,7 +75,6 @@
     </div>
    
 
-    <!-- <script src="<?php bloginfo('template_directory') ?>/public/library/jquery/jquery-3.3.1.slim.min.js" ></script> -->
     <script src="<?php bloginfo('template_directory') ?>/public/library/jquery/jquery.min.js"></script>
     <script src="<?php bloginfo('template_directory') ?>/public/js/popper.min.js" ></script>
     <script src="<?php bloginfo('template_directory') ?>/public/library/bootstrap/js/bootstrap.min.js"></script>

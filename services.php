@@ -2,7 +2,6 @@
   /* Template Name: Services */
   get_header(5); 
 ?>
-
 		<div class="services_bk">
           <div class="about_us_text_bk">SERVICES</div>
         </div>

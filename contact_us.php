@@ -7,8 +7,7 @@
      	<div class="about_us_text_bk">CONTACT US</div>
     </div>
     <div class="clearfix"></div>
-    <!-- slider top -->
-    
+ 
   </div>
   
   

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/public/library/bootstrap/css/bootstrap.min.css" >
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,8 +44,7 @@
                     <li class="nav-item">
                       <a class="nav-link" href="faq.html" tabindex="-1" aria-disabled="true">FAQ</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link border_none" href="contact_us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                    
                     </li> -->
                     <?php wp_nav_menu() ?>
                   </ul>

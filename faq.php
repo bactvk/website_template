@@ -7,7 +7,7 @@
           <div class="about_us_text_bk">COMMON QUESTIONS</div>
         </div>
         <div class="clearfix"></div>
-        <!-- slider top -->
+
         
       </div>
       

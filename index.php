@@ -2,7 +2,7 @@
 /* Template Name: Index */
 get_header() ?>
         <div class="clearfix"></div>
-        <!-- slider top -->
+        
         <div class="slider_top">
           <!-- <img class="header_img_s" src="<?php bloginfo('template_directory') ?>/public/images/header/s-typ.png" > -->
             <div class="first_view">
