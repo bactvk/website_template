@@ -1,0 +1,3 @@
+[submodule "themes/website_company"]
+	path = themes/website_company
+	url = https://info-smartnet@bitbucket.org/smartnetvn/smartnet.git
